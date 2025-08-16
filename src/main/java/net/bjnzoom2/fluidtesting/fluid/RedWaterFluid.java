@@ -33,14 +33,14 @@ public abstract class RedWaterFluid extends FlowableFluid {
     }
 
     @Override
-    protected int getLevelDecreasePerBlock(WorldView world) {
-        return 1;
-    }
-
-    @Override
     protected void beforeBreakingBlock(WorldAccess world, BlockPos pos, BlockState state) {
         BlockEntity blockEntity = state.hasBlockEntity() ? world.getBlockEntity(pos) : null;
         Block.dropStacks(state, world, pos, blockEntity);
+    }
+
+    @Override
+    protected int getLevelDecreasePerBlock(WorldView world) {
+        return 1;
     }
 
     @Override
