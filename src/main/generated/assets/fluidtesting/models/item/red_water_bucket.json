@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "fluidtesting:item/red_water_bucket"
+  }
+}
