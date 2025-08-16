@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.bjnzoom2.fluidtesting.FluidTestingDataGenerator"
+		],
+		"client": [
+			"net.bjnzoom2.fluidtesting.FluidTestingClient"
 		]
 	},
 	"mixins": [
