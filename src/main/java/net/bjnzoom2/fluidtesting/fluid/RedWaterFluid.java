@@ -92,7 +92,7 @@ public abstract class RedWaterFluid extends FlowableFluid {
 
         @Override
         protected int getMaxFlowDistance(WorldView world) {
-            return 5;
+            return 4;
         }
 
         @Override

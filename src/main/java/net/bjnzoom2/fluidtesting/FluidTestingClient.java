@@ -11,7 +11,7 @@ public class FluidTestingClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         FluidRenderHandlerRegistry.INSTANCE.register(ModFluids.STILL_RED_WATER, ModFluids.FLOWING_RED_WATER,
-                SimpleFluidRenderHandler.coloredWater(0xFF353535));
+                SimpleFluidRenderHandler.coloredWater(0xFFCC2323));
         BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(),
                 ModFluids.STILL_RED_WATER, ModFluids.FLOWING_RED_WATER);
     }

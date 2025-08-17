@@ -22,7 +22,7 @@ public class ModFluids {
             "red_water_block"), new FluidBlock(ModFluids.STILL_RED_WATER, Block.Settings.copy(Blocks.WATER)
             .replaceable().liquid()));
     public static final Item RED_WATER_BUCKET = Registry.register(Registries.ITEM, Identifier.of(FluidTesting.MOD_ID,
-            "red_water_bucket"), new BucketItem(ModFluids.FLOWING_RED_WATER,
+            "red_water_bucket"), new BucketItem(ModFluids.STILL_RED_WATER,
             new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
     public static void registerFluids() {
