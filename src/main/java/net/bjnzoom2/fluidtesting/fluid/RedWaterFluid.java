@@ -2,6 +2,7 @@ package net.bjnzoom2.fluidtesting.fluid;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.FluidBlock;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
@@ -65,7 +66,8 @@ public abstract class RedWaterFluid extends FlowableFluid {
 
     @Override
     protected BlockState toBlockState(FluidState state) {
-        return ModFluids.RED_WATER_BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(state));
+        return ModFluids.RED_WATER_BLOCK.getDefaultState()
+                .with(FluidBlock.LEVEL, getBlockStateLevel(state));
     }
 
     @Override
